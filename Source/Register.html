@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>
+        Register Page
+    </title>
+</head>
+<body background="img1.jpg"></body>
+<h1 style="text-align: center;color:deeppink;">
+    Register page
+</h1>
+
+<div align="center" style="color: deeppink">
+
+<form name="Register"  >
+    Username:<br><input type="text" name="usrnam" />
+    <br>
+    <br>
+    Email Id:<br><input type="email" name="emailid"/>
+    <br>
+    <br>
+    Mobile Number:<br><input type="tel" name="mobile"/>
+    <br>
+    <br>
+    Password:<br><input type="password" name="passwor"/>
+    <br>
+    <br>
+    Confirm Password:<br><input type="password" name="confirmpass"/>
+    <br>
+    <br>
+    <input type="button" onclick="check(this.form)" value="Register"/>
+    <br>
+    <br>
+    <input type="reset" value="Cancel"/>
+</form>
+    </div>
+<script language="javascript">
+    function check(form){
+        if(form.passwor.value == form.confirmpass.value )
+        {
+            window.open('Login.html')
+        }
+        else {
+            alert("Passwords doesn't match ")
+        }
+    }
+</script>
+</body>
+</html>
